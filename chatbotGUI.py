@@ -122,6 +122,8 @@ current_datetime = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 datex=Label(root,text= f"{current_datetime}")
 datex.grid(column=1,row=0)
 
+root.resizable(False,False)
+
 root.bind('<Return>', greetingtk)#root: This is the Tkinter window or frame to which the binding is applied.
 # .bind: This is a method in Tkinter that is used to bind an event to a function.
 # '<Return>': This specifies the event to bind, in this case, the "Return" key, which corresponds to the "Enter" key on the keyboard.
